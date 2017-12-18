@@ -5,6 +5,6 @@ if __name__ == '__main__':
 
 	port = 1111
 
-	sock.connect(('127.0.0.1', port))
-	print(sock.recv(1024))
+	sock.connect(('localhost', port))
+	print(sock.recv(1024).decode())
 	sock.close()
