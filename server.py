@@ -1,5 +1,8 @@
 import socket
 
+def manage_server():
+
+
 if __name__ == '__main__':
 	server = socket.socket()
 	print("Created socket successfully")
@@ -14,7 +17,6 @@ if __name__ == '__main__':
 
 	while listening:
 		connection, addr = server.accept()
-		threading.Thread(target=)
 		connection.send(b"Hey, what's up!")
 		connection.close()
 
